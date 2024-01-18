@@ -1,0 +1,58 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTROL STATEMENT DEMO</title>
+</head>
+
+<body>
+    <script>
+        function bank() {
+
+            var mainbank = "RBI";
+            var subbank = "SBI";
+            var typeofaccount = "saving";
+
+            var balance = 50000;
+
+
+            alert("initial balance is : " + balance);
+            accountNo = "1234";
+            if (mainbank == "RBI" || mainbank == "rbi") {
+                if (subbank == "SBI" || subbank == "sbi") {
+                    if (typeofaccount == "SAVING" || typeofaccount == "saving") {
+                        if (accountNo == 1234) {
+                            balance += 20000;
+                            alert("udated balance is : " + balance);
+                            balance -= 71000;
+                            if (balance >= 0) {
+                                alert("your remaning  balance is : " + balance);
+                            } else {
+                                alert("Sorry! Your balance is not suficient to withdraw");
+                            }
+
+
+                        } else {
+                            alert("Check your account no");
+                        }
+
+                    } else {
+                        alert("Sorry! your account is not saving account");
+                    }
+
+                } else {
+                    alert("Sorry! your bank is not in RBI");
+                }
+
+            } else {
+                alert("Sorry! Bank is not registration.");
+            }
+
+        }
+        bank();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS OBJECT CONSTRUCTOR DEMO</title>
+</head>
+
+<body>
+    <script>
+        function studentInfo(rollNo, name, address, class1) {
+            this.rollNo = rollNo;
+            this.name = name;
+            this.address = address;
+            this.class1 = class1;
+
+            this.changeClass = changeClass;
+
+            function changeClass(changePercentage) {
+                this.class1 = changePercentage;
+            }
+
+        }
+        stud = new studentInfo(1, "Amar", "Pune", "frist year");
+        document.write(stud.rollNo + "<br>" + stud.name + "<br>" + stud.address + "<br>" + stud.class1);
+        stud.changeClass("Secon year");
+        document.write("<br>" + stud.class1);
+    </script>
+
+</body>
+
+</html>

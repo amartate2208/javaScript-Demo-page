@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function ageCalculator() {
+            var userDob = document.getElementById("dob").value;
+            var DOB = new Date(userDob);
+            if (userDob == null || userDob == '') {
+                document.getElementById("error").innerHTML = "Select frist date then submit ";
+                return false;
+
+
+            } else {
+                var monthdiff = Date.now() - DOB.getTime();
+
+                var ageDate = new Date(monthdiff);
+
+                var year = ageDate.getUTCFullYear();
+
+                var age = Math.abs(year - 1970);
+                return document.getElementById("calculatedage").innerHTML = "Age of the person is " + age + " years";
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <h1>Calculate Age of the person</h1><br><br>
+        <b>Enter Date Of Birth</b> <input type="date" id="dob">
+        <span id="error" style="color: red;"></span>
+        <br><br>
+        <br><br>
+
+        <button type="submit" onclick="ageCalculator()">Calculate Age</button>
+        <br><br>
+        <h2 id="calculatedage"></h2>
+
+    </center>
+</body>
+
+</html>

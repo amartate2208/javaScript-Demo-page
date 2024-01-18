@@ -1,0 +1,27 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>HIDE ELEMENT DEMO</h1>
+    <div id="div" style="background-color: blueviolet;font-size: larger;color: bisque;">
+        Wel-Come to all
+
+    </div>
+    <p id="p">this is paragraph</p>
+    <button onclick="display()" id="btn">Hidden Content</button>
+    <script>
+        function display() {
+            document.getElementById("div").style.display = "none";
+            document.getElementById("p").style.display = "none";
+
+        }
+    </script>
+
+</body>
+
+</html>

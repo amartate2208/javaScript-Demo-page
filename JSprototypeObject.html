@@ -1,0 +1,35 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js prototype object demo</title>
+</head>
+
+<body>
+    <script>
+        function employee(empID, empName, empAddress, empSalary, empEmail) {
+            this.empID = empID;
+            this.empName = empName;
+            this.empAddress = empAddress;
+            this.empSalary = empEmail;
+
+
+        }
+        employee.prototype.employeeInfo = function() {
+            return this.empID + "<br>" + this.empName + "<br>" + this.empAddress;
+
+
+        }
+        employee.prototype.employeeInfo1 = function() {
+            return this.empSalary + "<br>" + this.empEmail;
+
+        }
+        var emp1 = new employee(1, "Amar", "pune", 20000, "amartate22@gmail.com");
+        document.write(emp1.employeeInfo());
+        document.write(emp1.employeeInfo1());
+    </script>
+
+</body>
+
+</html>

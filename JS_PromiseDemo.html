@@ -1,0 +1,71 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS PROMISE DEMO</title>
+</head>
+
+<body>
+    <h1>JAVASCRIPT PROMISE DEMO</h1>
+    <P id="promiseDemo"></P>
+    <script>
+        function display(data) {
+            document.getElementById("promiseDemo").innerHTML = data;
+        }
+        let myPromise = new Promise(function(mySuccess, myRejection) {
+            let num = 5;
+            if (num == 5) {
+                mySuccess("Problem solve");
+            } else {
+                myRejection("Problem Rejected");
+            }
+        });
+
+        myPromise.then(
+            function(value) {
+                display(value);
+
+            },
+            function(error) {
+                display(error);
+            }
+
+
+
+        );
+    </script>
+
+    <h1 id="time1"></h1>
+    <script>
+        setTimeout(function() {
+            callback("helooo");
+
+        }, 5000);
+
+        function callback(data) {
+            document.getElementById("time1").innerHTML = data;
+        }
+    </script>
+
+
+    <script>
+        let myPromise1 = new Promise(function(mySuccess, myRejection) {
+
+            setTimeout(function() {
+                mySuccess("helooo");
+
+            }, 5000);
+        });
+        myPromise.then(
+            function(value) {
+                document.getElementById("time1").innerHTML = value;
+            }
+        );
+    </script>
+
+
+
+</body>
+
+</html>

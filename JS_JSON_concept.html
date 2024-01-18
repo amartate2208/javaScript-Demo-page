@@ -1,0 +1,19 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Concept demo</title>
+</head>
+
+<body>
+    <h1>JSON Object demo</h1>
+    <b><p id="testData"></p></b>
+    <script>
+        const studentData = '{"student" : [{"RollNo":"1","Name":"Amar","Address":"pune","mobNo":"7483749050"},{"RollNo":"2","Name":"Payal","Address":"pune","mobNo":"7483749050"}]}'
+        const studentInfo = JSON.parse(studentData);
+        document.getElementById("testData").innerHTML = studentInfo.student[0].RollNo + "<br>" + studentInfo.student[1].Name
+    </script>
+</body>
+
+</html>

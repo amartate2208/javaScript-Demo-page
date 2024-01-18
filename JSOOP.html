@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP DEMO </title>
+</head>
+
+<body>
+    <SCript>
+        // declaration concept
+        //constructor object class using 
+        class StudentInfo {
+            constructor(id, name, address, age) {
+                this.id = id;
+                this.name = name;
+                this.address = address;
+                this.age = age;
+
+            }
+            display() {
+                document.write("Id of student is : " + this.id + "<br>");
+                document.write("Name of student  is: " + this.name + "<br>");
+                document.write("Address of student is : " + this.address + "<br>");
+                document.write("Age of student is  : " + this.age + "<br>");
+
+
+            }
+
+
+        }
+        var student1 = new StudentInfo(2, "Amar", "Pune", 23);
+        var student2 = new StudentInfo(3, "Rushya", "Pune", 23);
+        student1.display();
+        student2.display();
+    </SCript>
+
+
+    <script>
+        //Expresion concept
+        var person = class {
+            constructor(id, name, address, age) {
+                this.id = id;
+                this.name = name;
+                this.address = address;
+                this.age = age;
+
+            }
+            show() {
+                document.write(this.id + " " + this.name + " " + this.address + " " + this.age);
+
+            }
+        };
+        var rushya1 = new person(2, "Amar", "pune", 23);
+        rushya1.show();
+
+
+        //redeclaration concept
+
+        var person = class {
+            constructor(id, name, address, age) {
+                this.id = id;
+                this.name = name;
+                this.address = address;
+                this.age = age;
+
+            }
+            show() {
+                document.write(this.id + " " + this.name + " " + this.address + " " + this.age);
+
+            }
+        };
+        var rushya1 = new person(3, "Rushya", "pune", 23);
+        rushya1.show();
+    </script>
+
+
+
+</body>
+
+</html>

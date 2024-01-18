@@ -1,0 +1,29 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //json object
+        var obj = '{"carprice":"200000","carname":baleno}';
+        //js object
+        var jsData = JSON.parse(obj);
+        document.write("converting data from json object to js object<br>");
+        document.write(jsData.carprice + " " + jsData.carname + "<br>");
+
+        var jsObject = {
+            empid: "Empo1",
+            empName: "amar",
+            empAddress: "pune"
+        };
+        var jsonData = JSON.stringify(jsData);
+        document.write("converting data from js object to json object<br>");
+        document.write(jsonData);
+    </script>
+</body>
+
+</html>

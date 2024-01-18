@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LADDER DEMO</title>
+</head>
+
+<body>
+    <SCript>
+        function school() {
+            var mark = prompt("Enter Mark")
+            if (mark >= 0 && mark <= 34.99) {
+                alert("Fail, " + mark);
+            } else if (mark >= 35 && mark <= 44.99) {
+                alert("Pass, " + mark);
+            } else if (mark >= 45 && mark <= 59.99) {
+                alert("Second Class Pass, " + mark);
+            } else if (mark >= 60 && mark <= 74.99) {
+                alert("Frist Class Pass, " + mark);
+            } else if (mark >= 75 && mark <= 100) {
+                alert("distinction pass, " + mark);
+            } else {
+                alert("Sorry! Invalid marks");
+            }
+
+        }
+        school();
+    </SCript>
+</body>
+
+</html>

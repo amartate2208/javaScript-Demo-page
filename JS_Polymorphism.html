@@ -1,0 +1,30 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS POLYMORPHISM OOP DEMO</title>
+</head>
+
+<body>
+    <script>
+        class Vehical {
+            show() {
+                document.write("Vehical Executed <br>");
+            }
+        }
+        class Car extends Vehical {
+            show() {
+                document.write("Car is Executed");
+            }
+        }
+        var c = [new Vehical(), new Car()]
+        c.forEach(function(ccc) {
+                ccc.show();
+            })
+            //show();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS RANDOM IMAGE GENERATOR DEMO</title>
+    <script>
+        function imageGeneratorDemo() {
+            var randomImage = new Array();
+            randomImage[0] =
+                randomImage[1] = "inline_image_preview.jpg";
+            randomImage[2] = "inline_image_preview.jpg";
+            randomImage[3] = "inline_image_preview.jpg";
+            randomImage[4] = "inline_image_preview.jpg";
+            randomImage[5] = "inline_image_preview.jpg";
+            var result12 = '';
+
+
+
+
+
+
+
+            for (var i = 0; i < 10; i++) {
+                var number = Math.floor(Math.random() * randomImage.length);
+                result12 += '<img src="randomImage[number]">';
+
+                document.getElementById("result1").innerHTML = result12;
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <h1>Random Image Demo</h1>
+        <h3>Click on button to generate an Image</h3>
+
+        <input type="button" value="Generate Random Image" onclick="imageGeneratorDemo()">
+        <br><br>
+        <span id="result1" style="width: 200px;height: 200px;"></span>
+    </center>
+    <img src="inline_image_preview.jpg" alt="">
+
+</body>
+
+</html>

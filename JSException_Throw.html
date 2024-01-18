@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exception THrow</title>
+</head>
+
+<body>
+    <h1>Check Exception with throw keyword</h1>
+    <p>Please Enter Product Count in between 1 to 20</p>
+    <input type="text" id="throwexception">
+    <button type="button" onclick="myExceptionHandler()">Place Order</button>
+    <br><br>
+    <b><p id="PlaceOrder"></p></b>
+    <script>
+        function myExceptionHandler() {
+            var message = document.getElementById("PlaceOrder");
+            message.innerHTML = "";
+
+            var arg = document.getElementById("throwexception").value;
+
+            try {
+                if (arg.trim() == "")
+                    throw "Product Count can not be blank";
+                if (isNaN(arg))
+                    throw "Alphabets ar not allowed";
+                arg = Number(arg);
+                if (arg < 1)
+                    throw "Product can not be less than 1";
+                if (arg > 20)
+                    throw "Product count can not br greater then 20";
+
+
+            } catch (error) {
+
+                message.innerHTML = error;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

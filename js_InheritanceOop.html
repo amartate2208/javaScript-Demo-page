@@ -1,0 +1,74 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS INHERITANCE OOP CONCEPT DEMO</title>
+</head>
+
+<body>
+
+    <script>
+        //using inheritance concept
+        class DateDemoClass extends Date {
+            constructor() {
+                super();
+            }
+        }
+        var d = new DateDemoClass();
+        document.write("Current Date is : " + d.getDate() + "-" + (d.getMonth() + 1) + "-" + d.getFullYear());
+    </script>
+    <hr>
+    <hr><br>
+
+    <script>
+        //using inheritance tow or three classes
+        class Person {
+            constructor(id, name, address) {
+                this.id = id;
+                this.name = name;
+                this.address = address;
+            }
+            display() {
+                document.write(this.id + " " + this.name + " " + this.address);
+
+            }
+        }
+        class student12 extends Person {
+            constructor(id, name, address, rollNo, course, subject) {
+                super(id, name, address);
+                this.rollNo = rollNo;
+                this.course = course;
+                this.subject = subject;
+            }
+            show() {
+                document.write(" " + this.rollNo + " " + this.course + " " + this.subject);
+
+            }
+
+        }
+        // var s1 = new student12(1, "Amar", "Pune", 2, "BE", "Java");
+        //s1.display();
+        //s1.show();
+
+        class NCC extends student12 {
+            constructor(id, name, address, rollNo, course, subject, grpNo, noOfEnroll) {
+                super(id, name, address, rollNo, course, subject);
+                this.grpNo = grpNo;
+                this.noOfEnroll = noOfEnroll;
+            }
+            displayNcc() {
+                document.write(" " + this.grpNo + " " + this.noOfEnroll);
+
+            }
+
+        }
+        var ncc = new NCC(1, "Amar", "Pune", 2, "BE", "Java", "G20", 400);
+        ncc.display();
+        ncc.show();
+        ncc.displayNcc();
+    </script>
+
+</body>
+
+</html>

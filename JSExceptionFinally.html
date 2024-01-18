@@ -1,0 +1,26 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS EXCEPTION HANDLING FINALLY DEMO</title>
+</head>
+
+<body>
+    <script>
+        try {
+            var number = 100;
+            if (number == 10) {
+                document.write("number is ok <br>");
+            }
+        } catch (error) {
+            document.write("mumber Error " + error.message + "<br>");
+
+        } finally {
+            document.write("Value of number is " + number);
+        }
+    </script>
+
+</body>
+
+</html>

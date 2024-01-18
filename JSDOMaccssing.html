@@ -1,0 +1,25 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM OBJECT ACCESSING FIELD VALUE DEMO</title>
+    <script>
+        function acceptData() {
+            var uNAme = document.form1.userName.value;
+            var uPassword = document.form1.userPassword.value;
+            alert("Wel-come" + uNAme + ", your password is" + uPassword);
+        }
+    </script>
+</head>
+
+<body style="text-align: center; padding: 30%;">
+    <form name="form1" action="">
+        <input type="text" name="userName" placeholder="Enter user name"><br><br>
+        <input type="password" name="userPassword" placeholder="Enter password"><br><br>
+        <input type="button" value="print login" onclick="acceptData()">
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWITCH STATEMENT DEMO</title>
+</head>
+
+<body>
+    <script>
+        function switchDemo() {
+            var choice = 1;
+            switch (choice) {
+                case 1:
+                    var pi = 3.14;
+                    var r = 5;
+                    var circleArea = pi * r * r;
+                    alert("Area of circle is :" + circleArea);
+                    break;
+
+                case 2:
+                    var side = 8;
+                    var squareArea = side * side;
+                    alert("Area of square is : " + squareArea);
+                    break;
+
+                case 3:
+                    var l = 10;
+                    var b = 8;
+                    var rectangleArea = l * b;
+                    alert("Area of rectangle is : " + rectangleArea);
+                    break;
+
+                default:
+                    alert(" invalid choice")
+            }
+        }
+        //switchDemo();
+    </script>
+    <div>
+        <input type="button" onclick="switchDemo()" value="Calculate area of shapes">
+    </div>
+
+</body>
+
+</html>

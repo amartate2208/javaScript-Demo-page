@@ -1,0 +1,91 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS BOM WINDOW METHOD DEMO</title>
+</head>
+
+<body>
+    <script>
+        //confirm method
+        function mesg() {
+            var a = confirm("Do you want to close the window");
+            if (c == true) {
+                alert("your window has been close succesfully");
+
+            } else {
+                alert("your window dosen't  close succesfully");
+            }
+
+        }
+        //promt method
+        function input() {
+            var name = prompt("Enter youe name:");
+            document.write("Hello I am " + name);
+        }
+
+        //open method
+        function open() {
+            open("https://www.jaguar.com/jaguar-range/xf/index.html");
+        }
+
+        //setTimeOut
+        function time() {
+            setTimeout(function() {
+                alert("Amar")
+            }, 5000);
+        }
+    </script>
+
+    <br><br>
+    <script>
+        //screen object demo
+        function screeninfo() {
+            document.write("screen.width" + screen.width + "<br>");
+            document.write("screen.height" + screen.height + "<br>");
+            document.write("screen.availwidth" + screen.availWidth + "<br>");
+            document.write("screen.availheight" + screen.availHeight + "<br>");
+            document.write("screen.coloerDepth" + screen.colorDepth + "<br>");
+            document.write("screen.pixelDepth" + screen.pixelDepth + "<br>");
+        }
+    </script><br><br>
+    <script>
+        function navigator() {
+            document.write("navigator.appName" + navigator.appName + "<br>");
+            document.write("navigator.appName" + navigator.appName + "<br>");
+            document.write("navigator.appName" + navigator.appName + "<br>");
+            document.write("navigator.appName" + navigator.appName + "<br>");
+            document.write("navigator.appName" + navigator.appName + "<br>");
+            document.write("navigator.appName" + navigator.appName + "<br>");
+
+
+        }
+    </script>
+
+    <script>
+        //history method
+        function moveBack() {
+            window.history.back();
+
+        }
+
+        function moveForward() {
+            window.history.forward();
+
+        }
+    </script>
+
+    <input type="button" value="Close window" onclick="mesg()"><br><br>
+    <input type="button" value="window" onclick="input()"><br><br>
+    <input type="button" value="open paytm" onclick="open()"><br><br>
+    <input type="button" value="time" onclick="time()"><br><br>
+    <input type="button" value="screen" onclick="screeninfo()"><br><br>
+    <input type="button" value="back" onclick="moveBack()"><br><br>
+    <input type="button" value="Forword" onclick="moveForward()"><br><br>
+    <a href="JSpattern.html"> hiiii</a>
+
+
+</body>
+
+</html>

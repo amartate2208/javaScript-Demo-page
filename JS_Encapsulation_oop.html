@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS ENCAPSULATION OOP CONCEPT DEMO</title>
+</head>
+
+<body>
+    <script>
+        class Employee {
+            constructor() {
+                var empID;
+                var empName;
+                var empSalary;
+
+            }
+            getID() {
+                return this.empID;
+
+            }
+            setID(empID) {
+                this.empID = empID;
+
+            }
+            getName() {
+                return this.empName;
+
+            }
+            setName(empName) {
+                this.empName = empName;
+            }
+            getSalary() {
+                return this.empSalary;
+
+            }
+            setSalary(empSalary) {
+                this.empSalary = empSalary;
+            }
+        }
+        var emp1 = new Employee();
+        emp1.setID(123);
+        emp1.setName("Amar");
+        emp1.setSalary(2000);
+        document.write(emp1.getID() + "<br>");
+        document.write(emp1.getName() + "<br>");
+        document.write(emp1.getSalary());
+    </script>
+
+</body>
+
+</html>

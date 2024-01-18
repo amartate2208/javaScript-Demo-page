@@ -1,0 +1,37 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random String demo</title>
+    <script>
+        function randomStringGenerator() {
+            var charSet = "ABCDEFGHIGKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0987654321";
+            var stringLenghth = 8;
+            var randomString = '';
+            for (var i = 0; i < stringLenghth; i++) {
+                var rstring = Math.floor(Math.random() * charSet.length);
+                randomString += charSet.substring(rstring, rstring + 1)
+            }
+            document.getElementById("randomString").innerHTML = randomString;
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <h1>Random String Demo</h1>
+        <h3>Click on button to generate string</h3>
+        <form action="" name="from1">
+            <input type="button" value="Generate Random String" onclick=" randomStringGenerator()">
+            <br><br>
+            <h4>
+                <p id="randomString" style="color: red;"></p>
+            </h4>
+        </form>
+    </center>
+
+
+</body>
+
+</html>

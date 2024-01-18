@@ -1,0 +1,128 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern Demo</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        
+        .nas1 {
+            padding-left: 45%;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 style="text-align: center;"> Left traingle using stars pattern:</h3>
+    <div class="nas1">
+
+        <script>
+            function nasted() {
+                var c = 4;
+                for (var a = 1; a <= c; a++) {
+                    for (var b = 1; b <= a; b++) {
+                        //document.write(" " + c + " ");
+                        //c++
+                        document.write(" * ");
+
+
+                    }
+                    document.write("<br>");
+
+                }
+                for (var a = 1; a <= c - 1; a++) {
+                    for (var b = 1; b <= c - a; b++) {
+                        //document.write(" " + c + " ");
+                        //c++
+                        document.write(" * ");
+
+
+                    }
+                    document.write("<br>");
+
+                }
+
+            }
+            nasted();
+        </script>
+    </div>
+    <br><br><br>
+
+    <h3 style="text-align: center;">Reverse triangle using numbers:</h3>
+    <div class="nas1">
+
+        <script>
+            function nasted1() {
+                var c = 2;
+                for (var a = 5; a >= c - 1; a--) {
+                    for (var b = 1; b >= c - a; b--) {
+                        //document.write( " " + c + " "); 
+                        //c++ 
+                        document.write(a + " ");
+                    }
+                    document.write("<br>");
+                }
+            }
+            nasted1();
+        </script>
+    </div>
+    <br><br><br>
+
+
+    <h3 style="text-align: center;">Reverse triangle in decreasing order:</h3>
+    <div class="nas1">
+
+        <script>
+            function nasted3() {
+                var d = 1;
+                var c = 10;
+                for (var a = 4; a >= d; a--) {
+                    for (var b = 4; b >= a; b--) {
+                        //document.write(" " + c + " ");
+                        //c++
+                        document.write(c + " ");
+                        c--;
+
+
+
+                    }
+                    document.write("<br>");
+                }
+            }
+            nasted3();
+        </script>
+    </div>
+    <br><br><br>
+
+    <h3 style="text-align: center;">Dcreasing order pattern:</h3>
+    <div class="nas1">
+
+        <script>
+            function nasted4() {
+                var d = 1;
+                var c = 10;
+                for (var a = 4; a >= d; a--) {
+                    for (var b = 5; b >= d; b--) {
+                        //document.write(" " + c + " ");
+                        //c++
+                        document.write(c + " ");
+                        c--;
+
+
+
+                    }
+                    document.write("<br>");
+
+                }
+            }
+            nasted4();
+        </script>
+    </div>
+</body>
+
+</html>

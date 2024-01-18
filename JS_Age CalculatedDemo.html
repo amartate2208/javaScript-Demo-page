@@ -1,0 +1,26 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculated demo</title>
+</head>
+
+<body>
+    <script>
+        var dob = new Date("08/22/2000");
+
+        var monthdiff = Date.now() - dob.getTime();
+
+        var ageDate = new Date(monthdiff);
+
+        var year = ageDate.getUTCFullYear();
+
+        var age = Math.abs(year - 1970);
+
+        document.write("Age of the person is " + age + " years");
+    </script>
+
+</body>
+
+</html>

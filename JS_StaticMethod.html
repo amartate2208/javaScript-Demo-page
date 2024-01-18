@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS STATIC METHOD DEMO</title>
+</head>
+
+<body>
+    <script>
+        // Static Method concept
+        class StaticMethod {
+            static display() {
+                return "This is static method execution";
+            }
+            static display() {
+                return "Again this is static method execution";
+            }
+            static show() {
+                var a = 10;
+                var b = 30;
+                var c = a + b;
+                //alert(c);
+                return c;
+
+            }
+        }
+        //Non static method concept
+        getData() {
+            document.write("This is non static execution" + "<br>");
+            document.write(StaticMethod.show());
+        }
+
+        document.write(StaticMethod.display() + "<br>");
+        document.write(StaticMethod.show());
+        var staticObj = new StaticMethod();
+        staticObj.getData();
+    </script>
+
+    <br>
+    <script>
+        //Static Method In Constructor concept
+        class StaticMethodInConstructor {
+            constructor() {
+                document.write(StaticMethodInConstructor.accept() + "<br>");
+                document.write(this.constructor.accept());
+
+
+            }
+
+            static accept() {
+                return "This is concept in Constructor";
+            }
+
+        }
+        var obj = new StaticMethodInConstructor();
+    </script>
+
+
+</body>
+
+</html>

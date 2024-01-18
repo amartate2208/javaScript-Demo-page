@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS INNER HTML DEMO</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var flag = true;
+
+        function showContaint12() {
+            var data12 = "<form action='open'>Frist Name : <br> <input type ='text' name = 'fristName'><br>Last Name : <br> <input type = 'text' name='lastName'><br><br><input type ='submit' value='submit'></form>";
+            if (flag) {
+                document.getElementById('myContaintDisplay').innerHTML = data12;
+                flag = false;
+
+            } else {
+                document.getElementById('myContaintDisplay').innerHTML = " ";
+                flag = true;
+            }
+
+        }
+    </script>
+    <form name="demoForm" action="">
+        <input type="button" value="open containt" onclick="showContaint12()">
+        <div id="myContaintDisplay"></div>
+    </form>
+
+
+    <----inner text---->
+        <script type="text/javascript">
+            function passwordValidate() {
+                var message;
+                if (document.innerTextForm.mypassword12.value.length >= 10) {
+                    message = "strong";
+
+                } else if (document.innerTextForm.mypassword12.value.length >= 7) {
+                    message = "good";
+                } else {
+                    message = "weak";
+                }
+                document.getElementById('myStrength').innerText = message;
+            }
+        </script>
+
+        <form name="innerTextform" action="">
+            <input type="password" name="myPassword12" placeholder="Enter password uoto 7 chars" onkeyup="passwordValidate()" id="" style="width: 200px;"> Strength : <span id="myStrength">NO Strength</span>
+        </form>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS OBJECT DEMO</title>
+</head>
+
+<body>
+    <script>
+        person = {
+            id: "1)",
+            name: "Amar Tate",
+            flatNo: 203,
+            building: "Vrindavan",
+            location: "Yewaliwadi",
+            city: "Pune",
+            pincode: 411048,
+            mobNo: 7483749050,
+            address: function() {
+                return this.flatNo +
+                    ", <br > " + this.building +
+                    ", <br > " + this.location +
+                    ", <br > " + this.city +
+                    ", <br > " + this.pincode + "."
+            }
+
+
+        };
+
+        document.write(person.id + " " + person.name + " " + person.mobNo + " < br > " + person.address());
+    </script>
+
+
+</body>
+
+</html>
